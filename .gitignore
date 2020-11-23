@@ -1,0 +1,14 @@
+# File types
+*.pyc
+*.npy
+*.tar.gz
+
+# Folders
+data
+logs
+runs
+__pycache__
+
+# File
+.DS_Store
+bashrc
