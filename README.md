@@ -5,7 +5,7 @@
 
 ### Papers
 
-- Meta-Aggregating Networks for Class-Incremental Learning,
+- Meta-Aggregation Networks for Class-Incremental Learning,
 arXiv 2020. \[[PDF](https://arxiv.org/pdf/2010.05063.pdf)\]
 
 - Mnemonics Training: Multi-Class Incremental Learning without Forgetting,
@@ -18,7 +18,7 @@ Please cite our paper if it is helpful to your work:
 ```bibtex
 @article{Liu2020MANets
   author    = {Liu, Yaoyao an Schiele, Bernt and Sun, Qianru},
-  title     = {Meta-Aggregating Networks for Class-Incremental Learning},
+  title     = {Meta-Aggregation Networks for Class-Incremental Learning},
   journal   = {arXiv},
   volume    = {2010.05063},
   year      = {2020}
