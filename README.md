@@ -16,7 +16,7 @@ CVPR 2020. \[[PDF](https://arxiv.org/pdf/2002.10211.pdf)\]
 Please cite our paper if it is helpful to your work:
 
 ```bibtex
-@article{Liu2020MANets
+@article{Liu2020MANets,
   author    = {Liu, Yaoyao an Schiele, Bernt and Sun, Qianru},
   title     = {Meta-Aggregation Networks for Class-Incremental Learning},
   journal   = {arXiv},
