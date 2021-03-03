@@ -5,8 +5,8 @@
 
 ### Papers
 
-- Meta-Aggregation Networks for Class-Incremental Learning,
-arXiv 2020. \[[PDF](https://arxiv.org/pdf/2010.05063.pdf)\]
+- Adaptive Aggregation Networks for Class-Incremental Learning,
+CVPR 2021. \[[PDF](https://arxiv.org/pdf/2010.05063.pdf)\]
 
 - Mnemonics Training: Multi-Class Incremental Learning without Forgetting,
 CVPR 2020. \[[PDF](https://arxiv.org/pdf/2002.10211.pdf)\]
@@ -16,12 +16,11 @@ CVPR 2020. \[[PDF](https://arxiv.org/pdf/2002.10211.pdf)\]
 Please cite our paper if it is helpful to your work:
 
 ```bibtex
-@article{Liu2020MANets,
+@inproceedings{Liu2020AANets,
   author    = {Liu, Yaoyao an Schiele, Bernt and Sun, Qianru},
-  title     = {Meta-Aggregation Networks for Class-Incremental Learning},
-  journal   = {arXiv},
-  volume    = {2010.05063},
-  year      = {2020}
+  title     = {Adaptive Aggregation Networks for Class-Incremental Learning},
+  booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2021}
 }
 ```
 
