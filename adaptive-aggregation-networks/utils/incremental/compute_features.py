@@ -1,7 +1,14 @@
-#!/usr/bin/env python
-# coding=utf-8
-#!/usr/bin/env python
-# coding=utf-8
+##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+## Created by: Yaoyao Liu
+## Modified from: https://github.com/hshustc/CVPR19_Incremental_Learning
+## Max Planck Institute for Informatics
+## yaoyao.liu@mpi-inf.mpg.de
+## Copyright (c) 2021
+##
+## This source code is licensed under the MIT-style license found in the
+## LICENSE file in the root directory of this source tree
+##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+""" The functions that compute the features """
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

@@ -45,32 +45,18 @@ pip install tqdm tensorboardX Pillow==6.2.2
 
 ### Running Experiments
 
-CIFAR-100 (basline: iCaRL, Rebuffi et al., 2017)
-```bash
-python3 main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100 
-python3 main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100 
-python3 main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100 
-```
-
 CIFAR-100 (basline: LUCIR, Hou et al., 2019)
 ```bash
-python3 main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100 
-python3 main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100 
-python3 main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100 
+python main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100
+python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100
+python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100
 ```
 
-ImageNet-Subset (basline: iCaRL, Rebuffi et al., 2017)
+CIFAR-100 (basline: iCaRL, Rebuffi et al., 2017)
 ```bash
-python3 main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=icarl --imgnet_backbone=resnet18 --branch_mode=dual --branch_1=ss --branch_2=fixed --dataset=imagenet_sub --data_dir=./seed_1993_subset_100_imagenet/data --test_batch_size=50 --epochs=90 --num_workers=16 --custom_weight_decay=1e-4 --test_batch_size=50 
-python3 main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=icarl --imgnet_backbone=resnet18 --branch_mode=dual --branch_1=ss --branch_2=fixed --dataset=imagenet_sub --data_dir=./seed_1993_subset_100_imagenet/data --test_batch_size=50 --epochs=90 --num_workers=16 --custom_weight_decay=1e-4 --test_batch_size=50 
-python3 main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=icarl --imgnet_backbone=resnet18 --branch_mode=dual --branch_1=ss --branch_2=fixed --dataset=imagenet_sub --data_dir=./seed_1993_subset_100_imagenet/data --test_batch_size=50 --epochs=90 --num_workers=16 --custom_weight_decay=1e-4 --test_batch_size=50 
-```
-
-ImageNet-Subset (basline: LUCIR, Hou et al., 2019)
-```bash
-python3 main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=lucir --imgnet_backbone=resnet18 --branch_mode=dual --branch_1=ss --branch_2=fixed --dataset=imagenet_sub --data_dir=./seed_1993_subset_100_imagenet/data --test_batch_size=50 --epochs=90 --num_workers=16 --custom_weight_decay=1e-4 --test_batch_size=50 
-python3 main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=lucir --imgnet_backbone=resnet18 --branch_mode=dual --branch_1=ss --branch_2=fixed --dataset=imagenet_sub --data_dir=./seed_1993_subset_100_imagenet/data --test_batch_size=50 --epochs=90 --num_workers=16 --custom_weight_decay=1e-4 --test_batch_size=50 
-python3 main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=lucir --imgnet_backbone=resnet18 --branch_mode=dual --branch_1=ss --branch_2=fixed --dataset=imagenet_sub --data_dir=./seed_1993_subset_100_imagenet/data --test_batch_size=50 --epochs=90 --num_workers=16 --custom_weight_decay=1e-4 --test_batch_size=50 
+python main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100 
+python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100 
+python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100 
 ```
 
 ### Citation

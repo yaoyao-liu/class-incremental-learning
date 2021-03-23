@@ -1,10 +1,20 @@
+##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+## Created by: Yaoyao Liu
+## Modified from: https://github.com/pytorch/pytorch
+## Max Planck Institute for Informatics
+## yaoyao.liu@mpi-inf.mpg.de
+## Copyright (c) 2021
+##
+## This source code is licensed under the MIT-style license found in the
+## LICENSE file in the root directory of this source tree
+##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+""" MTL CONV layers. """
 import math
 import torch
 from torch.nn.parameter import Parameter
 import torch.nn.functional as F
 from torch.nn.modules.module import Module
 from torch.nn.modules.utils import _single, _pair, _triple
-
 
 class _ConvNdMtl(Module):
 

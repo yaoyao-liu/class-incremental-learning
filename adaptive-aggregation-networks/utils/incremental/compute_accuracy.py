@@ -1,5 +1,14 @@
-#!/usr/bin/env python
-# coding=utf-8
+##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+## Created by: Yaoyao Liu
+## Modified from: https://github.com/hshustc/CVPR19_Incremental_Learning
+## Max Planck Institute for Informatics
+## yaoyao.liu@mpi-inf.mpg.de
+## Copyright (c) 2021
+##
+## This source code is licensed under the MIT-style license found in the
+## LICENSE file in the root directory of this source tree
+##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+""" The functions that compute the accuracies """
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -30,7 +39,7 @@ def map_labels(order_list, Y_set):
 def compute_accuracy(the_args, fusion_vars, b1_model, b2_model, tg_feature_model, class_means, \
     X_protoset_cumuls, Y_protoset_cumuls, evalloader, order_list, is_start_iteration=False, \
     fast_fc=None, scale=None, print_info=True, device=None, cifar=True, imagenet=False, \
-    valdir=None, maml_lr=0.1, maml_epoch=50):
+    valdir=None):
     if device is None:
         device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     b1_model.eval()
@@ -84,13 +93,10 @@ def compute_accuracy(the_args, fusion_vars, b1_model, b2_model, tg_feature_model
             _, predicted_ncm = score_ncm.max(1)
             correct_ncm += predicted_ncm.eq(targets).sum().item()
     if print_info:
-        print("  Top 1 accuracy CNN            :\t\t{:.2f} %".format(100.*correct/total))
-        print("  Top 1 accuracy iCaRL          :\t\t{:.2f} %".format(100.*correct_icarl/total))
-        print("  Top 1 accuracy iCaRL-UB       :\t\t{:.2f} %".format(100.*correct_ncm/total))  
-        print("  The above results are the accuracy for the current phase.") 
-        print("  For the average accuracy, you need to record the results for all phases and calculate the average value.") 
+        print("  Current accuracy (FC)         :\t\t{:.2f} %".format(100.*correct/total))
+        print("  Current accuracy (Proto)      :\t\t{:.2f} %".format(100.*correct_icarl/total))
+        print("  Current accuracy (Proto-UB)   :\t\t{:.2f} %".format(100.*correct_ncm/total))  
     cnn_acc = 100.*correct/total
     icarl_acc = 100.*correct_icarl/total
     ncm_acc = 100.*correct_ncm/total
-    maml_acc = 0.0
-    return [cnn_acc, icarl_acc, ncm_acc, maml_acc], fast_fc
+    return [cnn_acc, icarl_acc, ncm_acc], fast_fc

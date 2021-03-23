@@ -1,3 +1,10 @@
+##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+## Copied from: https://github.com/hshustc/CVPR19_Incremental_Learning
+##
+## This source code is licensed under the MIT-style license found in the
+## LICENSE file in the root directory of this source tree
+##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+""" Tools for ImageNet """
 import argparse
 import os
 import shutil
