@@ -1,13 +1,21 @@
+##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+## Created by: Yaoyao Liu
+## Modified from: https://github.com/hshustc/CVPR19_Incremental_Learning
+## Max Planck Institute for Informatics
+## yaoyao.liu@mpi-inf.mpg.de
+## Copyright (c) 2021
+##
+## This source code is licensed under the MIT-style license found in the
+## LICENSE file in the root directory of this source tree
+##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 import torch.nn as nn
 import math
 import torch.utils.model_zoo as model_zoo
 import models.modified_linear as modified_linear
 
 def conv3x3(in_planes, out_planes, stride=1):
-    """3x3 convolution with padding"""
     return nn.Conv2d(in_planes, out_planes, kernel_size=3, stride=stride,
                      padding=1, bias=False)
-
 
 class BasicBlock(nn.Module):
     expansion = 1
@@ -105,13 +113,7 @@ class ResNet(nn.Module):
 
         return x
 
-
 def resnet18(pretrained=False, **kwargs):
-    """Constructs a ResNet-18 model.
-
-    Args:
-        pretrained (bool): If True, returns a model pre-trained on ImageNet
-    """
     model = ResNet(BasicBlock, [2, 2, 2, 2], **kwargs)
     return model
 

@@ -976,8 +976,3 @@ class BaseTrainer(object):
         # Save the class mean values   
         torch.save(class_means, osp.join(self.save_path, 'iter_{}_class_means.pth'.format(iteration)))
         return X_protoset_cumuls, Y_protoset_cumuls, class_means, alpha_dr_herding
-
-
-
-
-

@@ -86,4 +86,3 @@ if __name__ == '__main__':
     # Set the trainer and start training
     trainer = Trainer(the_args)
     trainer.train()
-

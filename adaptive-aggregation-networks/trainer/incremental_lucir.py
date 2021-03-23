@@ -194,4 +194,3 @@ def incremental_train_and_eval(the_args, epochs, fusion_vars, ref_fusion_vars, b
     handle_old_scores_bs.remove()
     handle_new_scores_bs.remove()
     return b1_model, b2_model
-
