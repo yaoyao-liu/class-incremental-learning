@@ -81,7 +81,7 @@ if __name__ == '__main__':
     # Occupy GPU memory in advance
     if the_args.disable_gpu_occupancy:
         occupy_memory(the_args.gpu)
-    print('Occupy GPU memory in advance.')
+        print('Occupy GPU memory in advance.')
 
     # Set the trainer and start training
     trainer = Trainer(the_args)
