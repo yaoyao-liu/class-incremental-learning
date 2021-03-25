@@ -3,6 +3,10 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/yaoyao-liu/mnemonics/blob/master/LICENSE)
 [![Python](https://img.shields.io/badge/python-3.6-blue.svg?style=flat-square)](https://www.python.org/)
 
+### News
+
+- We update the code for [Adaptive Aggregation Networks](https://github.com/yaoyao-liu/class-incremental-learning/tree/main/adaptive-aggregation-networks), which achieve SOTA performance on class-incremental learning tasks. Detailed comments are added for most of the functions and classes. We recommend you try it.
+
 ### Papers
 
 - Adaptive Aggregation Networks for Class-Incremental Learning,
