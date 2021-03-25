@@ -187,12 +187,6 @@ class Trainer(BaseTrainer):
             self.train_writer.add_scalar('avg_acc/fc', float(avg_cumul_acc_fc), iteration)
             self.train_writer.add_scalar('avg_acc/proto', float(avg_cumul_acc_icarl), iteration)
 
-            self.train_writer.add_scalar('fusion/block1', float(self.fusion_vars[0]), iteration)
-            self.train_writer.add_scalar('fusion/block2', float(self.fusion_vars[1]), iteration)
-            self.train_writer.add_scalar('fusion/block3', float(self.fusion_vars[2]), iteration)
-            if self.args.dataset == 'imagenet_sub' or self.args.dataset == 'imagenet': 
-                self.train_writer.add_scalar('fusion/block4', float(self.fusion_vars[3]), iteration)
-
         # Save the results and close the tensorboard writer
         torch.save(top1_acc_list_ori, osp.join(self.save_path, 'acc_list_ori.pth'))
         torch.save(top1_acc_list_cumul, osp.join(self.save_path, 'acc_list_cumul.pth'))
