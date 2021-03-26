@@ -7,9 +7,6 @@
 
 - We update the code for [Adaptive Aggregation Networks](https://github.com/yaoyao-liu/class-incremental-learning/tree/main/adaptive-aggregation-networks) (accepted to CVPR 2021), which achieve SOTA performance on class-incremental learning tasks. Detailed comments are added for most of the functions and classes. 
 
-
- you try it.
-
 ### Papers
 
 - Adaptive Aggregation Networks for Class-Incremental Learning,
