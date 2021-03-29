@@ -65,7 +65,7 @@ Please cite our paper if it is helpful to your work:
 
 ```bibtex
 @inproceedings{Liu2020AANets,
-  author    = {Liu, Yaoyao an Schiele, Bernt and Sun, Qianru},
+  author    = {Liu, Yaoyao and Schiele, Bernt and Sun, Qianru},
   title     = {Adaptive Aggregation Networks for Class-Incremental Learning},
   booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year      = {2021}
