@@ -13,7 +13,7 @@ CVPR 2020. \[[PDF](https://arxiv.org/pdf/2002.10211.pdf)\] \[[Project](https://c
 
 ### Citations
 
-Please cite our paper if it is helpful to your work:
+Please cite our papers if they are helpful to your work:
 
 ```bibtex
 @inproceedings{Liu2020AANets,
