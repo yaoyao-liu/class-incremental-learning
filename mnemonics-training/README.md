@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/python-3.6-blue.svg?style=flat-square&logo=python&color=3776AB)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/pytorch-0.4.0-%237732a8?style=flat-square&logo=PyTorch&color=EE4C2C)](https://pytorch.org/)
 
-\[[Paper](https://arxiv.org/pdf/2002.10211.pdf)\]
+\[[PDF](https://arxiv.org/pdf/2002.10211.pdf)\] \[[Project](https://class-il.mpi-inf.mpg.de/mnemonics/)\]
 
 ## Requirements
 
