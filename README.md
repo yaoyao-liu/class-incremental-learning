@@ -10,7 +10,7 @@
 CVPR 2021. \[[PDF](https://arxiv.org/pdf/2010.05063.pdf)\] \[[Project](https://class-il.mpi-inf.mpg.de/)\]
 
 - Mnemonics Training: Multi-Class Incremental Learning without Forgetting,
-CVPR 2020. \[[PDF](https://arxiv.org/pdf/2002.10211.pdf)\] \[[Project](https://class-il.mpi-inf.mpg.de/mnemonics/)\]
+CVPR 2020. \[[PDF](https://arxiv.org/pdf/2002.10211.pdf)\] \[[Project](https://class-il.mpi-inf.mpg.de/mnemonics-training/)\]
 
 ### Citations
 
