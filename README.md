@@ -1,7 +1,7 @@
 # Class-Incremental Learning
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/yaoyao-liu/class-incremental-learning/blob/master/LICENSE)
-[![Python](https://img.shields.io/badge/python-3.6-blue.svg?style=flat-square&logo=python&color=3776AB)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/python-3.6-blue.svg?style=flat-square&logo=python&color=6f9ec9&logoColor=6f9ec9)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/pytorch-1.2.0-%237732a8?style=flat-square&logo=PyTorch&color=EE4C2C)](https://pytorch.org/)
 
 ### Papers
