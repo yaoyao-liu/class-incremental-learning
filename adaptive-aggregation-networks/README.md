@@ -46,14 +46,14 @@ pip install tqdm tensorboardX Pillow==6.2.2
 ### Running Experiments
 #### Running Experiments w/ AANets
 
-CIFAR-100 ([LUCIR](https://github.com/hshustc/CVPR19_Incremental_Learning) w/ AANets)
+[LUCIR](https://github.com/hshustc/CVPR19_Incremental_Learning) w/ AANets
 ```bash
 python main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100
 python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100
 python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100
 ```
 
-CIFAR-100 ([iCaRL](https://github.com/hshustc/CVPR19_Incremental_Learning) w/ AANets)
+[iCaRL](https://github.com/hshustc/CVPR19_Incremental_Learning) w/ AANets
 ```bash
 python main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100 
 python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100 
@@ -62,28 +62,28 @@ python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=ica
 
 #### Running Baseline Experiments
 
-CIFAR-100 ([LUCIR](https://github.com/hshustc/CVPR19_Incremental_Learning) w/o AANets, dual branch)
+[LUCIR](https://github.com/hshustc/CVPR19_Incremental_Learning) w/o AANets, dual branch
 ```bash
 python main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=free --branch_2=free --fusion_lr=0.0 --dataset=cifar100
 python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=free --branch_2=free ---fusion_lr=0.0 -dataset=cifar100
 python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=free --branch_2=free --fusion_lr=0.0 --dataset=cifar100
 ```
 
-CIFAR-100 ([iCaRL](https://github.com/hshustc/CVPR19_Incremental_Learning) w/o AANets, dual branch)
+[iCaRL](https://github.com/hshustc/CVPR19_Incremental_Learning) w/o AANets, dual branch
 ```bash
 python main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=dual --branch_1=free --branch_2=free --fusion_lr=0.0 --dataset=cifar100 
 python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=dual --branch_1=free --branch_2=free --fusion_lr=0.0 --dataset=cifar100 
 python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=dual --branch_1=free --branch_2=free --fusion_lr=0.0 --dataset=cifar100 
 ```
 
-CIFAR-100 ([LUCIR](https://github.com/hshustc/CVPR19_Incremental_Learning) w/o AANets, single branch)
+[LUCIR](https://github.com/hshustc/CVPR19_Incremental_Learning) w/o AANets, single branch
 ```bash
 python main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=single --branch_1=free --dataset=cifar100
 python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=single --branch_1=free -dataset=cifar100
 python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=single --branch_1=free --dataset=cifar100
 ```
 
-CIFAR-100 ([iCaRL](https://github.com/hshustc/CVPR19_Incremental_Learning) w/o AANets, single branch)
+[iCaRL](https://github.com/hshustc/CVPR19_Incremental_Learning) w/o AANets, single branch
 ```bash
 python main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=single --branch_1=free --dataset=cifar100 
 python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=single --branch_1=free --dataset=cifar100 
