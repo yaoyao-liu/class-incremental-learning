@@ -78,16 +78,16 @@ python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=ica
 
 CIFAR-100 ([LUCIR](https://github.com/hshustc/CVPR19_Incremental_Learning) w/o AANets, single branch)
 ```bash
-python main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=single --branch_1=free --branch_2=free --fusion_lr=0.0 --dataset=cifar100
-python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=single --branch_1=free --branch_2=free ---fusion_lr=0.0 -dataset=cifar100
-python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=single --branch_1=free --branch_2=free --fusion_lr=0.0 --dataset=cifar100
+python main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=single --branch_1=free --dataset=cifar100
+python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=single --branch_1=free -dataset=cifar100
+python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=single --branch_1=free --dataset=cifar100
 ```
 
 CIFAR-100 ([iCaRL](https://github.com/hshustc/CVPR19_Incremental_Learning) w/o AANets, single branch)
 ```bash
-python main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=single --branch_1=free --branch_2=free --fusion_lr=0.0 --dataset=cifar100 
-python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=single --branch_1=free --branch_2=free --fusion_lr=0.0 --dataset=cifar100 
-python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=single --branch_1=free --branch_2=free --fusion_lr=0.0 --dataset=cifar100 
+python main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=single --branch_1=free --dataset=cifar100 
+python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=single --branch_1=free --dataset=cifar100 
+python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=single --branch_1=free --dataset=cifar100 
 ```
 
 ### Citation
