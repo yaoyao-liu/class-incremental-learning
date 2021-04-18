@@ -11,6 +11,8 @@
 * [Introduction](#introduction)
 * [Getting Started](#getting-started)
 * [Running Experiments](#running-experiments)
+* [Citation](#citation)
+* [acknowledgements](#acknowledgements)
 
 ### Introduction
 
