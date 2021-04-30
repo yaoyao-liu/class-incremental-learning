@@ -42,7 +42,7 @@ conda install torchvision -c pytorch
 
 Install other requirements:
 ```bash
-pip install tqdm tensorboardX Pillow==6.2.2
+pip install tqdm scipy tensorboardX Pillow==6.2.2
 ```
 
 ### Running Experiments
