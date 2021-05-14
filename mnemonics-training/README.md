@@ -51,8 +51,6 @@ python main.py --method=mnemonics --nb_cl=2
 | [iCaRL](https://arxiv.org/abs/1611.07725)  | CIFAR-100 | 32.87  | 32.98 | 36.32 |
 | [iCaRL](https://arxiv.org/abs/1611.07725) w/ ours | CIFAR-100 | 25.93  | 26.92   | 28.92 |
 
-> We find some bugs in the code for ***LUCIR w/ ours***. <br /> We'll update it later after we've fixed this issue.
-
 ## Citation
 
 Please cite our paper if it is helpful to your work:
