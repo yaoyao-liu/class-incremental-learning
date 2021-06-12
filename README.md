@@ -7,7 +7,7 @@
 ### Papers
 
 - Adaptive Aggregation Networks for Class-Incremental Learning,
-CVPR 2021. \[[PDF](https://arxiv.org/pdf/2010.05063.pdf)\] \[[Project](https://class-il.mpi-inf.mpg.de/)\]
+CVPR 2021. \[[PDF](https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_Adaptive_Aggregation_Networks_for_Class-Incremental_Learning_CVPR_2021_paper.pdf)\] \[[Project](https://class-il.mpi-inf.mpg.de/)\]
 
 - Mnemonics Training: Multi-Class Incremental Learning without Forgetting,
 CVPR 2020. \[[PDF](https://arxiv.org/pdf/2002.10211.pdf)\] \[[Project](https://class-il.mpi-inf.mpg.de/mnemonics-training/)\]
