@@ -21,6 +21,7 @@ Please cite our papers if they are helpful to your work:
   author    = {Liu, Yaoyao and Schiele, Bernt and Sun, Qianru},
   title     = {Adaptive Aggregation Networks for Class-Incremental Learning},
   booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages     = {2544-2553},
   year      = {2021}
 }
 ```
