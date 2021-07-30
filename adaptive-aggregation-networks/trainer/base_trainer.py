@@ -46,7 +46,10 @@ import warnings
 warnings.filterwarnings('ignore')
 
 class BaseTrainer(object):
-    """The class that contains the code for base trainer class."""
+    """The class that contains the code for base trainer class.
+    This file only contains the related functions used in the training process.
+    If you hope to view the overall training process, you may find it in the file named trainer.py in the same folder.
+    """
     def __init__(self, the_args):
         """The function to initialize this class.
         Args:
