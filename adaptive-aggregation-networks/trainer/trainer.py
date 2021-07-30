@@ -50,7 +50,10 @@ warnings.filterwarnings('ignore')
 
 class Trainer(BaseTrainer):
     def train(self):
-        """The class that contains the code for the class-incremental system."""
+        """The class that contains the code for the class-incremental system.
+        This trianer is based on the base_trainer.py in the same folder.
+        If you hope to find the source code of the functions used in this trainer, you may find them in base_trainer.py.
+        """
         
         # Set tensorboard recorder
         self.train_writer = SummaryWriter(comment=self.save_path)
