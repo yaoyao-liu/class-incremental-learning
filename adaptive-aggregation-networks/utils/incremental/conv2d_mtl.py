@@ -8,7 +8,10 @@
 ## This source code is licensed under the MIT-style license found in the
 ## LICENSE file in the root directory of this source tree
 ##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-""" MTL CONV layers. """
+""" SS CONV layers. 
+This file contains the source code for the scaling and shifting weights.
+If this architecture is applied, the convolution weights will be frozen, and only the channel-wise masks will be updated.
+"""
 import math
 import torch
 from torch.nn.parameter import Parameter
