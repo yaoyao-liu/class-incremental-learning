@@ -45,8 +45,8 @@ Install other requirements:
 pip install tqdm scipy sklearn tensorboardX Pillow==6.2.2
 ```
 
-### Running Experiments on CIFAR-100
-#### Running Experiments w/ AANets
+### Running Experiments
+#### Running Experiments w/ AANets on CIFAR-100
 
 [LUCIR](https://github.com/hshustc/CVPR19_Incremental_Learning) w/ AANets
 ```bash
@@ -62,7 +62,7 @@ python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=ica
 python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=dual --branch_1=ss --branch_2=free --dataset=cifar100 
 ```
 
-#### Running Baseline Experiments
+#### Running Baseline Experiments on CIFAR-100
 
 [LUCIR](https://github.com/hshustc/CVPR19_Incremental_Learning) w/o AANets, dual branch
 ```bash
@@ -92,7 +92,7 @@ python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=ica
 python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=single --branch_1=free --dataset=cifar100 
 ```
 
-### Running Experiments on ImageNet
+#### Running Experiments on ImageNet
 To run the experiments on ImageNet (including ImageNet-Subset and ImageNet-Full), you need to change the hyperparameters according to [this file](https://github.com/hshustc/CVPR19_Incremental_Learning/blob/master/imagenet-class-incremental/cbf_class_incremental_cosine_imagenet.py). 
 
 ### Citation
