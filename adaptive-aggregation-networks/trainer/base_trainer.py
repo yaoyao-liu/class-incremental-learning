@@ -726,7 +726,7 @@ class BaseTrainer(object):
 
             # Build the balanced dataloader
             current_train_imgs = merge_images_labels(X_balanced_this_step, map_Y_train_this_step)
-            self.balancedset.imgs = self.trainset.samples = current_train_imgs
+            self.balancedset.imgs = current_train_imgs
             balancedloader = torch.utils.data.DataLoader(self.balancedset, batch_size=self.args.test_batch_size, \
             shuffle=False, num_workers=self.args.num_workers)
         else:
