@@ -77,7 +77,7 @@ def incremental_train_and_eval(the_args, epochs, fusion_vars, ref_fusion_vars, b
                 ref_outputs = ref_model(inputs)
             else:
                 ref_outputs, ref_features_new = process_inputs_fp(the_args, ref_fusion_vars, ref_model, ref_b2_model, inputs)
-            # Loss 1: feature-level distillation loss
+            # Loss 1: logits-level distillation loss
             loss1 = nn.KLDivLoss()(F.log_softmax(outputs[:,:num_old_classes]/T, dim=1), \
                 F.softmax(ref_outputs.detach()/T, dim=1)) * T * T * beta * num_old_classes
             # Loss 2: classification loss
