@@ -95,6 +95,12 @@ python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=ica
 #### Running Experiments on ImageNet
 To run the experiments on ImageNet (including ImageNet-Subset and ImageNet-Full), you need to change the hyperparameters according to [this file](https://github.com/hshustc/CVPR19_Incremental_Learning/blob/master/imagenet-class-incremental/cbf_class_incremental_cosine_imagenet.py). 
 
+#### Code for PODNet w/ AANets
+
+I am still cleaning up the code for PODNet w/ AANets. So I will add it to the GitHub repository later. 
+<br>
+If you need to use it now, here is a preliminary version: [Google Drive Link](https://drive.google.com/file/d/1ngKvJNWUxTnl-KiQk9pDTJD4scPqKRaV/view?usp=sharing)
+
 ### Citation
 
 Please cite our paper if it is helpful to your work:
