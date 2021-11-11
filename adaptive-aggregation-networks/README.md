@@ -100,6 +100,7 @@ To run the experiments on ImageNet (including ImageNet-Subset and ImageNet-Full)
 I am still cleaning up the code for [PODNet](https://github.com/arthurdouillard/incremental_learning.pytorch) w/ AANets. So I will add it to the GitHub repository later. 
 <br>
 If you need to use it now, here is a preliminary version: [Google Drive Link](https://drive.google.com/file/d/1ngKvJNWUxTnl-KiQk9pDTJD4scPqKRaV/view?usp=sharing)
+Please note that you need to install the same environment as [PODNet](https://github.com/arthurdouillard/incremental_learning.pytorch) to run this code.
 
 ### Citation
 
