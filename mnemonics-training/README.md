@@ -10,6 +10,10 @@
 
 See the versions for the requirements [here](https://yyliu.net/files/mnemonics_packages.txt).
 
+## Download the Datasest
+
+See the details [here](https://github.com/yaoyao-liu/class-incremental-learning/tree/main/adaptive-aggregation-networks#download-the-datasets).
+
 
 ## Running Experiments
 
