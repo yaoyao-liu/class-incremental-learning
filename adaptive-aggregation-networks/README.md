@@ -69,6 +69,8 @@ File name: ImageNet-Subset.tar
 Size: 15.37 GB
 MD5: ab2190e9dac15042a141561b9ba5d6e9
 ```
+You need to untar the downloaded file, and put the folder `seed_1993_subset_100_imagenet` in `class-incremental-learning/adaptive-aggregation-networks/data`.
+
 Please note that the ImageNet-Subset is created from ImageNet. ImageNet is only allowed to be downloaded by researchers for non-commercial research and educational purposes. See the terms of ImageNet [here](https://image-net.org/download.php).
 
 ### Running Experiments
