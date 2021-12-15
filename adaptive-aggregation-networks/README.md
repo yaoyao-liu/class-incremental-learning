@@ -92,8 +92,13 @@ python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=ica
 python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=icarl --branch_mode=single --branch_1=free --dataset=cifar100 
 ```
 
-#### Running Experiments on ImageNet
-To run the experiments on ImageNet (including ImageNet-Subset and ImageNet-Full), you need to change the hyperparameters according to [this file](https://github.com/hshustc/CVPR19_Incremental_Learning/blob/master/imagenet-class-incremental/cbf_class_incremental_cosine_imagenet.py). 
+#### Running Experiments on ImageNet-Subset
+[LUCIR](https://github.com/hshustc/CVPR19_Incremental_Learning) w/ AANets
+```bash
+python main.py --nb_cl_fg=50 --nb_cl=10 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=ss --branch_2=free --dataset=imagenet_sub --test_batch_size=50 --epochs=90 --num_workers=1 --custom_weight_decay=0.0005 --the_lambda=10 --K=2 --dist=0.5 --lw_mr=1 --base_lr1=0.05 --base_lr2=0.05 --dynamic_budget
+python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=ss --branch_2=free --dataset=imagenet_sub --test_batch_size=50 --epochs=90 --num_workers=1 --custom_weight_decay=0.0005 --the_lambda=10 --K=2 --dist=0.5 --lw_mr=1 --base_lr1=0.05 --base_lr2=0.05 --dynamic_budget
+python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=ss --branch_2=free --dataset=imagenet_sub --test_batch_size=50 --epochs=90 --num_workers=1 --custom_weight_decay=0.0005 --the_lambda=10 --K=2 --dist=0.5 --lw_mr=1 --base_lr1=0.05 --base_lr2=0.05 --dynamic_budget
+```
 
 #### Code for [PODNet](https://github.com/arthurdouillard/incremental_learning.pytorch) w/ AANets
 

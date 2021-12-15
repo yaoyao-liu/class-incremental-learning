@@ -26,7 +26,7 @@ if __name__ == '__main__':
     parser.add_argument('--ckpt_dir_fg', type=str, default='-', help='the checkpoint file for the 0-th phase')
     parser.add_argument('--resume_fg', action='store_true', help='resume 0-th phase model from the checkpoint')
     parser.add_argument('--resume', action='store_true', help='resume from the checkpoints')
-    parser.add_argument('--num_workers', default=8, type=int, help='the number of workers for loading data')
+    parser.add_argument('--num_workers', default=1, type=int, help='the number of workers for loading data')
     parser.add_argument('--random_seed', default=1993, type=int, help='random seed')
     parser.add_argument('--train_batch_size', default=128, type=int, help='the batch size for train loader')
     parser.add_argument('--test_batch_size', default=100, type=int, help='the batch size for test loader')

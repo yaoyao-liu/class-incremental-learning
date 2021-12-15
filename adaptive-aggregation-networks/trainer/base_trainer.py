@@ -119,15 +119,17 @@ class BaseTrainer(object):
             traindir = os.path.join(self.args.data_dir, 'train')
             valdir = os.path.join(self.args.data_dir, 'val')
             # Set the dataloaders
+            train_transforms = [transforms.RandomResizedCrop(224), transforms.RandomHorizontalFlip(), transforms.ColorJitter(brightness=63 / 255)]
+            test_transforms = [transforms.Resize(256),transforms.CenterCrop(224)]
+            common_transforms = [transforms.ToTensor(), transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])]
+            train_trsf = transforms.Compose([*train_transforms, *common_transforms])
+            test_trsf = transforms.Compose([*test_transforms, *common_transforms])
             normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-            self.trainset = datasets.ImageFolder(traindir, transforms.Compose([transforms.RandomResizedCrop(224), \
-                transforms.RandomHorizontalFlip(), transforms.ToTensor(), normalize,]))
-            self.testset =  datasets.ImageFolder(valdir, transforms.Compose([transforms.Resize(256), \
-                transforms.CenterCrop(224), transforms.ToTensor(), normalize,]))
-            self.evalset =  datasets.ImageFolder(valdir, transforms.Compose([transforms.Resize(256), \
-                transforms.CenterCrop(224), transforms.ToTensor(), normalize,]))
-            self.balancedset =  datasets.ImageFolder(traindir, transforms.Compose([transforms.Resize(256), \
-                transforms.CenterCrop(224), transforms.ToTensor(), normalize,]))
+            self.trainset = datasets.ImageFolder(traindir, train_trsf)
+            self.testset =  datasets.ImageFolder(valdir, test_trsf)
+            self.evalset =  datasets.ImageFolder(valdir, test_trsf)
+            self.balancedset =  datasets.ImageFolder(traindir, train_trsf)
+
             # Set the network architecture
             if self.args.imgnet_backbone == 'resnet18':
                 self.network = modified_resnet.resnet18
@@ -584,7 +586,7 @@ class BaseTrainer(object):
             testloader = torch.utils.data.DataLoader(self.testset, batch_size=self.args.test_batch_size,
                 shuffle=False, num_workers=self.args.num_workers)
         else:
-            raise ValueError('Please set correct dataset.')
+            raise ValueError('Please set the correct dataset.')
         return trainloader, testloader
 
     def set_optimizer(self, iteration, start_iter, b1_model, ref_model, b2_model, ref_b2_model):
@@ -671,16 +673,14 @@ class BaseTrainer(object):
                 raise ValueError('Please set the correct mode.')
 
         # Set the learning rate decay scheduler
-        if iteration > start_iter:
-            tg_lr_scheduler = lr_scheduler.MultiStepLR(tg_optimizer, milestones=self.lr_strat, \
-                gamma=self.args.lr_factor)
-            fusion_lr_scheduler = lr_scheduler.MultiStepLR(fusion_optimizer, milestones=self.lr_strat, \
-                gamma=self.args.lr_factor)
+        if self.args.dataset == 'cifar100':
+            tg_lr_scheduler = lr_scheduler.MultiStepLR(tg_optimizer, milestones=self.lr_strat, gamma=self.args.lr_factor)
+            fusion_lr_scheduler = lr_scheduler.MultiStepLR(fusion_optimizer, milestones=self.lr_strat, gamma=self.args.lr_factor)
+        elif self.args.dataset == 'imagenet_sub' or self.args.dataset == 'imagenet':
+            tg_lr_scheduler = lr_scheduler.CosineAnnealingLR(tg_optimizer, self.args.epochs)        
+            fusion_lr_scheduler = lr_scheduler.MultiStepLR(fusion_optimizer, milestones=self.lr_strat, gamma=self.args.lr_factor)
         else:
-            tg_lr_scheduler = lr_scheduler.MultiStepLR(tg_optimizer, milestones=self.lr_strat, \
-                gamma=self.args.lr_factor)          
-            fusion_lr_scheduler = lr_scheduler.MultiStepLR(fusion_optimizer, \
-                milestones=self.lr_strat, gamma=self.args.lr_factor)    
+            raise ValueError('Please set the correct dataset.')    
 
         return tg_optimizer, tg_lr_scheduler, fusion_optimizer, fusion_lr_scheduler
 
@@ -902,7 +902,7 @@ class BaseTrainer(object):
                         iter_herding += 1
                     w_t = w_t+mu-D[:,ind_max]
         else:
-            raise ValueError('Please set correct dataset.')
+            raise ValueError('Please set the correct dataset.')
         # Set two empty lists for the exemplars and the labels 
         X_protoset_cumuls = []
         Y_protoset_cumuls = []
@@ -974,7 +974,7 @@ class BaseTrainer(object):
                     class_means[:,current_cl[iter_dico],1] = (np.dot(D,alph)+np.dot(D2,alph))/2
                     class_means[:,current_cl[iter_dico],1] /= np.linalg.norm(class_means[:,current_cl[iter_dico],1])
         else:
-            raise ValueError('Please set correct dataset.')
+            raise ValueError('Please set the correct dataset.')
 
         # Save the class mean values   
         torch.save(class_means, osp.join(self.save_path, 'iter_{}_class_means.pth'.format(iteration)))
