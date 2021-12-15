@@ -139,8 +139,10 @@ Please note that you need to install the same environment as [PODNet](https://gi
 #### Accuracy for Each Phase
 
 We provide the accuracy for each phase on CIFAR-100, ImageNet-Subset, and ImageNet-Full in different settings (*N=5, 10, 25*).
+<br>
 You may view the results using the following link:
 [\[Google Sheet Link\]](https://docs.google.com/spreadsheets/d/1rSA0IH7OilDgfx2cvl86ixjVno4I15bmrDWkS4cUtBA/edit?usp=sharing)
+<br>
 Please note that we re-run some experiments, so some results are slightly different from the paper table.
 
 
