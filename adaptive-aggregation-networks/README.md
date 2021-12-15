@@ -10,6 +10,7 @@
 
 * [Introduction](#introduction)
 * [Getting Started](#getting-started)
+* [Download the Datasets](#download-the-datasets)
 * [Running Experiments](#running-experiments)
 * [Citation](#citation)
 * [Acknowledgements](#acknowledgements)
@@ -44,6 +45,31 @@ Install other requirements:
 ```bash
 pip install tqdm scipy sklearn tensorboardX Pillow==6.2.2
 ```
+
+Clone this repository and enter the folder `adaptive-aggregation-networks`:
+```bash
+git clone https://github.com/yaoyao-liu/class-incremental-learning.git
+cd class-incremental-learning/adaptive-aggregation-networks
+
+```
+
+### Download the Datasets
+#### CIFAR-100
+It will be downloaded automatically by `torchvision` when running the experiments.
+
+#### ImageNet-Subset
+We create the ImageNet-Subset following [LUCIR](https://github.com/hshustc/CVPR19_Incremental_Learning).
+You may download the dataset using the following links:
+- [Download from Google Drive](https://drive.google.com/file/d/1n5Xg7Iye_wkzVKc0MTBao5adhYSUlMCL/view?usp=sharing)
+- [Download from 百度网盘](https://pan.baidu.com/s/1MnhITYKUI1i7aRBzsPrCSw) (提取码: 6uj5)
+
+File information:
+```
+File name: ImageNet-Subset.tar
+Size: 15.37 GB
+MD5: ab2190e9dac15042a141561b9ba5d6e9
+```
+Please note that the ImageNet-Subset is created from ImageNet. ImageNet is only allowed to be downloaded by researchers for non-commercial research and educational purposes. See the terms of ImageNet [here](https://image-net.org/download.php).
 
 ### Running Experiments
 #### Running Experiments w/ AANets on CIFAR-100
