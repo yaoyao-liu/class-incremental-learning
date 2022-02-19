@@ -132,7 +132,7 @@ python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=luc
 
 We are still cleaning up the code for [PODNet](https://github.com/arthurdouillard/incremental_learning.pytorch) w/ AANets. So we will add it to the GitHub repository later. 
 <br>
-If you need to use it now, here is a preliminary version: <https://gitlab.mpi-klsb.mpg.de/yaoyaoliu/POD-AANets>
+If you need to use it now, here is a preliminary version: <https://github.com/yaoyao-liu/POD-AANets>
 <br>
 Please note that you need to install the same environment as [PODNet](https://github.com/arthurdouillard/incremental_learning.pytorch) to run this code.
 
