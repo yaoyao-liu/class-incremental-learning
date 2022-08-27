@@ -128,7 +128,7 @@ python main.py --nb_cl_fg=50 --nb_cl=5 --gpu=0 --random_seed=1993 --baseline=luc
 python main.py --nb_cl_fg=50 --nb_cl=2 --gpu=0 --random_seed=1993 --baseline=lucir --branch_mode=dual --branch_1=ss --branch_2=free --dataset=imagenet_sub --test_batch_size=50 --epochs=90 --num_workers=1 --custom_weight_decay=0.0005 --the_lambda=10 --K=2 --dist=0.5 --lw_mr=1 --base_lr1=0.05 --base_lr2=0.05 --dynamic_budget
 ```
 
-#### Code for [PODNet](https://github.com/arthurdouillard/incremental_learning.pytorch) w/ AANets
+### Code for [PODNet](https://github.com/arthurdouillard/incremental_learning.pytorch) w/ AANets
 
 We are still cleaning up the code for [PODNet](https://github.com/arthurdouillard/incremental_learning.pytorch) w/ AANets. So we will add it to the GitHub repository later. 
 <br>
@@ -136,7 +136,7 @@ If you need to use it now, here is a preliminary version: <https://github.com/ya
 <br>
 Please note that you need to install the same environment as [PODNet](https://github.com/arthurdouillard/incremental_learning.pytorch) to run this code.
 
-#### Accuracy for Each Phase
+### Accuracy for Each Phase
 
 We provide the accuracy for each phase on CIFAR-100, ImageNet-Subset, and ImageNet-Full in different settings (*N=5, 10, 25*).
 <br>
