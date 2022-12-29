@@ -3,6 +3,7 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/yaoyao-liu/class-incremental-learning/blob/master/LICENSE)
 [![Python](https://img.shields.io/badge/python-3.6-blue.svg?style=flat-square&logo=python&color=3776AB)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/pytorch-1.2.0-%237732a8?style=flat-square&logo=PyTorch&color=EE4C2C)](https://pytorch.org/)
+[![Citations](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/yaoyao-liu/yaoyao-liu.github.io/google-scholar-stats/gs_data_shieldsio_aanets.json&logo=Google%20Scholar&color=5087ec&style=flat-square&label=citations)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Uf9GqRsAAAAJ&citation_for_view=Uf9GqRsAAAAJ:u_35RYKgDlwC)
 
 \[[PDF](https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_Adaptive_Aggregation_Networks_for_Class-Incremental_Learning_CVPR_2021_paper.pdf)\] \[[Project Page](https://class-il.mpi-inf.mpg.de/)\] \[[GitLab@MPI](https://gitlab.mpi-klsb.mpg.de/yaoyaoliu/adaptive-aggregation-networks)\] 
 
